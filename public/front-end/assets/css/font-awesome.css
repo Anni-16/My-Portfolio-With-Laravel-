@@ -1,7 +1,3 @@
-/*!
- * Font Awesome Pro 5.14.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- */
 .fa,
 .fab,
 .fad,
@@ -9549,81 +9545,107 @@ span[class*=" flaticon-"]:before {
 .flaticon-phone-call:before {
     content: "\f101";
 }
+
 .flaticon-placeholder:before {
     content: "\f102";
 }
+
 .flaticon-envelope:before {
     content: "\f103";
 }
+
 .flaticon-calendar:before {
     content: "\f104";
 }
+
 .flaticon-follower:before {
     content: "\f105";
 }
+
 .flaticon-gear:before {
     content: "\f106";
 }
+
 .flaticon-premium:before {
     content: "\f107";
 }
+
 .flaticon-right-quotation-mark:before {
     content: "\f108";
 }
+
 .flaticon-photography:before {
     content: "\f109";
 }
+
 .flaticon-cameraman:before {
     content: "\f10a";
 }
+
 .flaticon-photo:before {
     content: "\f10b";
 }
+
 .flaticon-balance:before {
     content: "\f10c";
 }
+
 .flaticon-safety:before {
     content: "\f10d";
 }
+
 .flaticon-up-right-arrow:before {
     content: "\f10e";
 }
+
 .flaticon-open-book:before {
     content: "\f10f";
 }
+
 .flaticon-family:before {
     content: "\f110";
 }
+
 .flaticon-paper-plane:before {
     content: "\f111";
 }
+
 .flaticon-quote:before {
     content: "\f112";
 }
+
 .flaticon-curve:before {
     content: "\f113";
 }
+
 .flaticon-code:before {
     content: "\f114";
 }
+
 .flaticon-share:before {
     content: "\f115";
 }
+
 .flaticon-files:before {
     content: "\f116";
 }
+
 .flaticon-client:before {
     content: "\f117";
 }
+
 .flaticon-timetable:before {
     content: "\f118";
 }
+
 .flaticon-internet:before {
     content: "\f119";
 }
+
 .flaticon-price-tag:before {
     content: "\f11a";
 }
+
 .flaticon-categories:before {
     content: "\f11b";
 }

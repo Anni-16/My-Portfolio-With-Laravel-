@@ -14,7 +14,7 @@
     <!-- Back To Top End -->
 
     <!-- Preloader Start -->
-    <div id="preloader" class="preloader">
+    <!-- <div id="preloader" class="preloader">
         <div class="animation-preloader">
             <div class="spinner">
             </div>
@@ -25,8 +25,8 @@
                 <span data-text-preloader="N" class="letters-loading">
                     N
                 </span>
-                <span data-text-preloader="I" class="letters-loading">
-                    I
+                <span data-text-preloader="N" class="letters-loading">
+                    N
                 </span>
                 <span data-text-preloader="I" class="letters-loading">
                     I
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Preloader End -->
 
     <!-- Offcanvas Area Start -->
@@ -102,7 +102,7 @@
                                     <i class="fal fa-clock"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="tel:+918595308953">24/7 Support</a>
+                                    <a href="tel:+918595308953">24/7 Support</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">

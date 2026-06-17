@@ -1,11 +1,5 @@
 <!--<< All JS Plugins >>-->
 <script src="{{ asset('front-end/assets/js/jquery-3.7.1.min.js') }}"></script>
-<!--<< Jquery ui Js >>-->
-<script src="{{ asset('front-end/assets/js/jquery-ui.js') }}"></script>
-<!--<< Imagesloaded Js >>-->
-<script src="{{ asset('front-end/assets/js/imagesloaded.min.js') }}"></script>
-<!--<< Viewport Js >>-->
-<script src="{{ asset('front-end/assets/js/viewport.jquery.js') }}"></script>
 <!--<< Bootstrap Js >>-->
 <script src="{{ asset('front-end/assets/js/bootstrap.bundle.min.js') }}"></script>
 <!--<< Nice Select Js >>-->

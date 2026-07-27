@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-dark: #000000;
+    --bg-card: #0c0c0e;
+    --bg-card-hover: #121215;
+    --text-white: #ffffff;
+    --text-muted: #7f7f7f;
+    --text-light: #dddddd;
+    --primary: #ffffff;
+    --primary-hover: #e0e0e0;
+    --accent-coral: #ffffff;
+    --accent-emerald: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-color-hover: rgba(255, 255, 255, 0.25);
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Inter', sans-serif;
+    --hover-color: #00e5ff;
+}
+
+/* Base resets & styles */
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+}
+
+/* Fonts styling */
+.font-serif-custom {
+    font-family: var(--font-serif);
+}
+
+.font-sans-custom {
+    font-family: var(--font-sans);
+}
+
+/* Custom Trail Cursor (Stark Grayscale) */
+.custom-cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary);
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s, height 0.15s, background-color 0.15s;
+}
+
+.custom-cursor-ring {
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: width 0.25s cubic-bezier(0.1, 0.8, 0.3, 1),
+        height 0.25s cubic-bezier(0.1, 0.8, 0.3, 1),
+        border-color 0.25s, background-color 0.25s;
+}
+
+/* Hide default cursor on desktop */
+@media (min-width: 1024px) {
+
+    html,
+    body,
+    a,
+    button,
+    input,
+    select,
+    textarea {
+        cursor: none;
+    }
+}
+
+.custom-cursor-hover .custom-cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--hover-color);
+}
+
+.custom-cursor-hover .custom-cursor-ring {
+    width: 50px;
+    height: 50px;
+    border-color: var(--hover-color);
+    background-color: rgba(0, 229, 255, 0.08);
+}
+
+/* Grayscale Glow Backgrounds */
+.radial-glow-violet {
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.06) 0%, transparent 65%);
+}
+
+.radial-glow-coral {
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.04) 0%, transparent 65%);
+}
+
+/* Navigation glass effect */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    transition: all 0.4s ease;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sticky-header {
+    background-color: rgba(0, 0, 0, 0.92) !important;
+    backdrop-filter: blur(16px);
+    height: 64px !important;
+    /* Mobile sticky height */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#mobileMenu {
+    top: 64px;
+    /* Mobile default top */
+    max-h: calc(100vh - 64px);
+    overflow-y: auto;
+    transition: top 0.4s ease, max-height 0.4s ease;
+}
+
+.sticky-header #mobileMenu {
+    top: 64px;
+    /* Mobile sticky top */
+    max-h: calc(100vh - 64px);
+}
+
+@media (min-width: 768px) {
+    .sticky-header {
+        height: 80px !important;
+        /* Desktop/Tablet sticky height */
+    }
+
+    #mobileMenu {
+        top: 96px;
+        /* Desktop/Tablet default top */
+        max-h: calc(100vh - 96px);
+    }
+
+    .sticky-header #mobileMenu {
+        top: 80px;
+        /* Desktop/Tablet sticky top */
+        max-h: calc(100vh - 80px);
+    }
+}
+
+/* Circular Skill animation */
+.skill-circle {
+    transition: stroke-dashoffset 2s cubic-bezier(0.1, 0.8, 0.3, 1);
+}
+
+/* Timeline Components */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    left: -6px;
+    top: 6px;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover::after {
+    background-color: var(--hover-color);
+    transform: scale(1.4);
+    box-shadow: 0 0 10px var(--hover-color);
+}
+
+/* Hover Glowing Cards */
+.glowing-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glowing-card:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--border-color-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(255, 255, 255, 0.08);
+}
+
+/* Projects grid item */
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.project-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-image {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: grayscale(100%);
+    /* Force absolute grayscale on project photos */
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.08);
+    filter: grayscale(0%) brightness(1.1);
+}
+
+/* Scroll reveal classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.reveal-visible,
+.reveal-right.reveal-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Custom slider buttons */
+.slider-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    color: #000000;
+    transform: scale(1.05);
+}
+
+/* Form inputs styling */
+.floating-input {
+    background: transparent;
+    border-bottom: 2px solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+.floating-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Asterisk Rotate Animation */
+@keyframes spinSlow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spinSlow 12s linear infinite;
+}
+
+/* Marquee Text (Creative elements) */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+/* Global Hover Overrides */
+a.hover\:text-gray-400:hover,
+a.hover\:text-white:hover,
+a.hover\:text-gray-300:hover,
+.group:hover .group-hover\:text-gray-400,
+.group:hover .group-hover\:text-gray-300,
+.group:hover .group-hover\:text-white {
+    color: var(--hover-color) !important;
+}
+
+a:hover i.fab,
+a:hover i.fas {
+    color: var(--hover-color) !important;
+    transition: color 0.3s ease;
+}
+
+.hover\:bg-black:hover {
+    background-color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important;
+    color: #000 !important;
+}
+
+.hover\:bg-black:hover i {
+    color: #000 !important;
+}
+
+#my-logo img{
+    width: 200px;
+}

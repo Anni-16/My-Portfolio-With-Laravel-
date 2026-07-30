@@ -7,7 +7,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/about-us', function () {
-    return view('about-us');
+    return view('about');
 })->name('about-us');
 
 Route::get('/services', function () {
@@ -15,7 +15,7 @@ Route::get('/services', function () {
 })->name('services');
 
 Route::get('/my-work-gallery', function () {
-    return view('my-work-gallery');
+    return view('projects');
 })->name('my-work-gallary');
 
 Route::get('/blogs', function () {
@@ -23,5 +23,5 @@ Route::get('/blogs', function () {
 })->name('blogs');
 
 Route::get('/contact-us', function () {
-    return view('contact-us');
+    return view('contact');
 })->name('contact-us');

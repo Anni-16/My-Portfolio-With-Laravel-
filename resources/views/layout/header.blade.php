@@ -17,7 +17,7 @@
                         class="text-gray-500 hover:text-white text-sm font-medium tracking-wider uppercase transition">
                         About
                     </a>
-                    <a href="{{ route('services') }} }}"
+                    <a href="{{ route('services') }}"
                         class="text-gray-500 hover:text-white text-sm font-medium tracking-wider uppercase transition">
                         Services
                     </a>
@@ -61,11 +61,11 @@
             <div class="flex flex-col p-6 sm:p-8 space-y-5 font-sans-custom">
                 <a href="{{ url('/') }}" class="text-white hover:text-gray-400 text-lg font-medium">Home</a>
                 <a href="{{ route('about-us') }}" class="text-gray-400 hover:text-white text-lg font-medium">About</a>
-                <a href="{{ route('services') }} }}" class="text-gray-400 hover:text-white text-lg font-medium">Services</a>
-                <a href="{{ route('my-work-gallary') }} }}" class="text-gray-400 hover:text-white text-lg font-medium">Projects</a>
+                <a href="{{ route('services') }}" class="text-gray-400 hover:text-white text-lg font-medium">Services</a>
+                <a href="{{ route('my-work-gallary') }}" class="text-gray-400 hover:text-white text-lg font-medium">Projects</a>
                 <a href="about.html#experience" class="text-gray-400 hover:text-white text-lg font-medium">Resume</a>
-                <a href="{{ route('blogs') }} }}" class="text-gray-400 hover:text-white text-lg font-medium">Blog</a>
-                <a href="{{ route('contact-us') }} }}" class="text-gray-400 hover:text-white text-lg font-medium">Contact</a>
+                <a href="{{ route('blogs') }}" class="text-gray-400 hover:text-white text-lg font-medium">Blog</a>
+                <a href="{{ route('contact-us') }}" class="text-gray-400 hover:text-white text-lg font-medium">Contact</a>
 
                 <div class="flex gap-5 pt-4 text-gray-500">
                     <a href="https://in.linkedin.com/in/aniket-kumar-maurya-314941271" target="_blank" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>

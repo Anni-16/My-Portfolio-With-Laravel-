@@ -17,7 +17,7 @@
     @include('layout.css')
 </head>
 
-<body>
+<body class="bg-[#000000] text-[#dddddd]">
 
     <!-- Header Section Start -->
     @include('layout.header')
@@ -76,7 +76,7 @@
                         class="relative w-full max-w-[500px] aspect-square rounded-2xl overflow-hidden border border-gray-900 shadow-2xl bg-[#0e0e12] group">
                         <!-- Grayscale Hero Graphics -->
                         <img id="heroImage"
-                            src="file:///C:/Users/Devloper/.gemini/antigravity/brain/d2c2c643-ca12-48da-9c8c-e2eb708754ab/hero_illustration_1781798306267.png"
+                            src="{{ asset('front-end/assets/img/banner/home-banner.png') }}"
                             alt="Creative Design and Code Illustration"
                             class="w-full h-full object-cover grayscale opacity-90 group-hover:scale-105 transition-all duration-700">
                     </div>
@@ -94,21 +94,37 @@
 
         <!-- Social Icons Left/Right Floating -->
         <div class="absolute right-8 top-1/2 -translate-y-1/2 flex flex-col gap-5 z-20 hidden md:flex">
-            <a href="#"
-                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#"
-                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#"
+            <a href="https://in.linkedin.com/in/aniket-kumar-maurya-314941271" target="_blank"
                 class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="#"
+            <a href="https://github.com/Anni-16" target="_blank"
                 class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
-                <i class="fab fa-x-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/__.xanni01/" target="_blank"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.pinterest.com/xanni01/" target="_blank"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="https://www.youtube.com/@_.xanni01_edit" target="_blank"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://x.com/aniketkuma35664" target="_blank"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://dev.to/@anni16" target="_blank"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
+                <i class="fa-brands fa-dev"></i>
+            </a>
+            <a href="https://www.behance.net/aniketkumar346" target="_blank"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white hover:scale-110 transition-all duration-300">
+                <i class="fa-brands fa-behance"></i>
             </a>
         </div>
     </section>
@@ -250,7 +266,7 @@
                     </p>
 
                     <div class="flex items-center gap-6">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+                        <img src="{{ asset('front-end/assets/img/author.avif') }}"
                             alt="Avatar" class="w-16 h-16 rounded-full border border-white/20 object-cover grayscale">
                         <div>
                             <h4 class="text-white font-bold text-lg font-sans-custom">Geroz Alexander</h4>
@@ -396,31 +412,14 @@
                         Explore Creative Projects
                     </h2>
                 </div>
-                <!-- Filters & Slider Controls wrapper -->
+                <!-- View All -->
                 <div class="flex flex-wrap items-center gap-6 font-sans-custom">
-                    <!-- Filtering Navigation -->
-                    <div class="flex flex-wrap gap-3">
+                    <a href="{{ route('my-work-gallary') }}">
                         <button
-                            class="filter-btn px-5 py-2 rounded-full text-black text-xs font-bold bg-white shadow-md transition-all duration-300"
-                            data-filter="all">
+                            class="px-5 py-2 rounded-full text-black text-xs font-bold bg-white shadow-md transition-all duration-300">
                             All Works
                         </button>
-                        <button
-                            class="filter-btn px-5 py-2 rounded-full text-gray-500 hover:text-white text-xs font-bold transition-all duration-300"
-                            data-filter="design">
-                            Design
-                        </button>
-                        <button
-                            class="filter-btn px-5 py-2 rounded-full text-gray-500 hover:text-white text-xs font-bold transition-all duration-300"
-                            data-filter="development">
-                            Development
-                        </button>
-                        <button
-                            class="filter-btn px-5 py-2 rounded-full text-gray-500 hover:text-white text-xs font-bold transition-all duration-300"
-                            data-filter="branding">
-                            Branding
-                        </button>
-                    </div>
+                    </a>
                     <!-- Divider line -->
                     <div class="hidden sm:block w-px h-6 bg-white/10"></div>
                     <!-- Slider Arrows -->
@@ -443,13 +442,13 @@
                     style="width: max-content;">
 
                     <!-- Project 1 -->
-                    <div class="portfolio-item project-card group reveal flex-shrink-0" data-category="design">
+                    <div class="portfolio-item project-card group reveal flex-shrink-0">
                         <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80"
                             alt="Creative Interface Design" class="w-full aspect-[4/3] object-cover project-image">
                         <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                             <span
-                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Design</span>
-                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4">Vespera App UI</h3>
+                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
+                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
                             <a href="#"
                                 class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                                 <i class="fas fa-arrow-right -rotate-45"></i>
@@ -458,14 +457,14 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="portfolio-item project-card group reveal flex-shrink-0" data-category="development"
+                    <div class="portfolio-item project-card group reveal flex-shrink-0"
                         style="transition-delay: 100ms;">
                         <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=600&q=80"
                             alt="Ecommerce Web Platform" class="w-full aspect-[4/3] object-cover project-image">
                         <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                             <span
-                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Development</span>
-                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4">Cosmos Shop Platform</h3>
+                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
+                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
                             <a href="#"
                                 class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                                 <i class="fas fa-arrow-right -rotate-45"></i>
@@ -474,14 +473,14 @@
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="portfolio-item project-card group reveal flex-shrink-0" data-category="branding"
+                    <div class="portfolio-item project-card group reveal flex-shrink-0"
                         style="transition-delay: 200ms;">
                         <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=600&q=80"
                             alt="Branding Campaign" class="w-full aspect-[4/3] object-cover project-image">
                         <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                             <span
-                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Branding</span>
-                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4">Aura Identity Kit</h3>
+                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
+                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
                             <a href="#"
                                 class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                                 <i class="fas fa-arrow-right -rotate-45"></i>
@@ -490,13 +489,13 @@
                     </div>
 
                     <!-- Project 4 -->
-                    <div class="portfolio-item project-card group reveal flex-shrink-0" data-category="development">
+                    <div class="portfolio-item project-card group reveal flex-shrink-0">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
                             alt="Dashboard Development" class="w-full aspect-[4/3] object-cover project-image">
                         <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                             <span
-                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Development</span>
-                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4">Vertex Admin Panel</h3>
+                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
+                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
                             <a href="#"
                                 class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                                 <i class="fas fa-arrow-right -rotate-45"></i>
@@ -505,14 +504,14 @@
                     </div>
 
                     <!-- Project 5 -->
-                    <div class="portfolio-item project-card group reveal flex-shrink-0" data-category="design"
+                    <div class="portfolio-item project-card group reveal flex-shrink-0"
                         style="transition-delay: 100ms;">
                         <img src="https://images.unsplash.com/photo-1581291518655-9523c932ded7?auto=format&fit=crop&w=600&q=80"
                             alt="Dashboard Design" class="w-full aspect-[4/3] object-cover project-image">
                         <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                             <span
-                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Design</span>
-                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4">Lumina App Interface</h3>
+                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
+                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
                             <a href="#"
                                 class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                                 <i class="fas fa-arrow-right -rotate-45"></i>
@@ -521,14 +520,14 @@
                     </div>
 
                     <!-- Project 6 -->
-                    <div class="portfolio-item project-card group reveal flex-shrink-0" data-category="branding"
+                    <div class="portfolio-item project-card group reveal flex-shrink-0"
                         style="transition-delay: 200ms;">
                         <img src="https://images.unsplash.com/photo-1618005198143-d8664b0d00f6?auto=format&fit=crop&w=600&q=80"
                             alt="Branding & Corporate Design" class="w-full aspect-[4/3] object-cover project-image">
                         <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                             <span
-                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Branding</span>
-                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4">Nova Branding System</h3>
+                                class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
+                            <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
                             <a href="#"
                                 class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                                 <i class="fas fa-arrow-right -rotate-45"></i>
@@ -897,6 +896,25 @@
                                 class="floating-input py-3 text-white focus:border-white transition-colors placeholder:text-gray-800">
                         </div>
 
+                        <!-- Phone No. Input -->
+                        <div class="flex flex-col">
+                            <label for="phone"
+                                class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Your Phone No.</label>
+                            <input type="phone" id="phone" required placeholder="8855992233"
+                                class="floating-input py-3 text-white focus:border-white transition-colors placeholder:text-gray-800">
+                        </div>
+
+                        <!-- Subject Input -->
+                        <div class="flex flex-col">
+                            <label for="subject" class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Inquiry Type</label>
+                            <select id="subject" class="bg-black border-b-2 border-white/8 py-3 text-gray-400 focus:text-white focus:border-white focus:outline-none transition-colors">
+                                <option value="design">UI/UX Design Mockups</option>
+                                <option value="development">Frontend Development Package</option>
+                                <option value="branding">Digital Rebranding Package</option>
+                                <option value="general">General Collaboration / Saying Hi</option>
+                            </select>
+                        </div>
+                        
                         <!-- Message Input -->
                         <div class="flex flex-col">
                             <label for="message"

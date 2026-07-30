@@ -20,6 +20,20 @@
                         class="bg-black border border-gray-800 rounded-xl px-4 py-3 text-white focus:border-[#00e5ff] focus:outline-none transition-colors">
                 </div>
                 <div class="flex flex-col">
+                    <label class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Phone No.</label>
+                    <input type="email" required placeholder="8855996633"
+                        class="bg-black border border-gray-800 rounded-xl px-4 py-3 text-white focus:border-[#00e5ff] focus:outline-none transition-colors">
+                </div>
+                <div class="flex flex-col">
+                    <label for="subject" class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Inquiry Type</label>
+                    <select id="subject" class="bg-black border-b-2 border-white/8 py-3 text-gray-400 focus:text-white focus:border-white focus:outline-none transition-colors">
+                        <option value="design">UI/UX Design Mockups</option>
+                        <option value="development">Frontend Development Package</option>
+                        <option value="branding">Digital Rebranding Package</option>
+                        <option value="general">General Collaboration / Saying Hi</option>
+                    </select>
+                </div>
+                <div class="flex flex-col">
                     <label class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Project Description</label>
                     <textarea required rows="4" placeholder="Tell me about your project goals..."
                         class="bg-black border border-gray-800 rounded-xl px-4 py-3 text-white focus:border-[#00e5ff] focus:outline-none transition-colors resize-none"></textarea>

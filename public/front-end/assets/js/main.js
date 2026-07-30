@@ -601,3 +601,152 @@ document.querySelectorAll(".testimonial-card").forEach((card) => {
         openReviewModal(name, role, text, imgSrc);
     });
 });
+
+// Skill Filteration Function
+const filterBtns = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".skill-progress-card");
+
+filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        // Active button style
+        filterBtns.forEach((b) => {
+            b.classList.remove("bg-white", "text-black");
+            b.classList.add("text-gray-500");
+        });
+
+        btn.classList.add("bg-white", "text-black");
+        btn.classList.remove("text-gray-500");
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach((card) => {
+            if (filter === "all" || card.dataset.category === filter) {
+                card.style.display = "flex";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
+
+// Project Filteration Function
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projectCards = document.querySelectorAll(
+        "#projectsGrid .portfolio-item",
+    );
+
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Update active button state
+            filterButtons.forEach((btn) => {
+                btn.classList.remove("text-black", "bg-white", "shadow-md");
+                btn.classList.add("text-gray-500", "hover:text-white");
+            });
+            button.classList.add("text-black", "bg-white", "shadow-md");
+            button.classList.remove("text-gray-500", "hover:text-white");
+
+            const filterValue = button.getAttribute("data-filter");
+
+            projectCards.forEach((card) => {
+                const category = card.getAttribute("data-category");
+
+                if (filterValue === "all" || category === filterValue) {
+                    card.style.display = "block";
+                    // Small delay for clean fade-in
+                    setTimeout(() => {
+                        card.classList.remove("opacity-0", "scale-95");
+                        card.classList.add(
+                            "opacity-100",
+                            "scale-100",
+                            "reveal-visible",
+                        );
+                    }, 50);
+                } else {
+                    card.classList.remove("opacity-100", "scale-100");
+                    card.classList.add("opacity-0", "scale-95");
+                    setTimeout(() => {
+                        card.style.display = "none";
+                    }, 300); // match transition speed
+                }
+            });
+        });
+    });
+});
+
+// Blogs Filteration Function
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const blogCards = document.querySelectorAll("#blogGrid .glowing-card");
+
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Update active button state
+            filterButtons.forEach((btn) => {
+                btn.classList.remove("text-black", "bg-white", "shadow-md");
+                btn.classList.add("text-gray-500", "hover:text-white");
+            });
+            button.classList.add("text-black", "bg-white", "shadow-md");
+            button.classList.remove("text-gray-500", "hover:text-white");
+
+            const filterValue = button.getAttribute("data-filter");
+
+            blogCards.forEach((card) => {
+                const category = card.getAttribute("data-category");
+
+                if (filterValue === "all" || category === filterValue) {
+                    card.style.display = "flex";
+                    // Small delay for clean fade-in
+                    setTimeout(() => {
+                        card.classList.remove("opacity-0", "scale-95");
+                        card.classList.add(
+                            "opacity-100",
+                            "scale-100",
+                            "reveal-visible",
+                        );
+                    }, 50);
+                } else {
+                    card.classList.remove("opacity-100", "scale-100");
+                    card.classList.add("opacity-0", "scale-95");
+                    setTimeout(() => {
+                        card.style.display = "none";
+                    }, 300); // match transition speed
+                }
+            });
+        });
+    });
+});
+
+// Contact Us  form Success Message Function
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const successBlock = document.getElementById("formSuccess");
+
+    if (form && successBlock) {
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            // Fade out form
+            form.classList.add(
+                "transition-opacity",
+                "duration-300",
+                "opacity-0",
+            );
+
+            setTimeout(() => {
+                form.classList.add("hidden");
+                successBlock.classList.remove("hidden");
+                // Fade in success block
+                successBlock.classList.add(
+                    "transition-opacity",
+                    "duration-500",
+                    "opacity-0",
+                );
+                setTimeout(() => {
+                    successBlock.classList.remove("opacity-0");
+                    successBlock.classList.add("opacity-100");
+                }, 50);
+            }, 300);
+        });
+    }
+});

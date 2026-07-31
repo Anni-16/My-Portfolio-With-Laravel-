@@ -60,9 +60,9 @@
     </section>
 
     <!-- Projects Grid Section -->
-    <section class="mb-20 relative overflow-hidden" id="works">
+     <section class="mb-20 relative overflow-hidden" id="works">
         <div class="max-w-7xl mx-auto px-6">
-
+            
             <!-- Filters Controls -->
             <div class="flex justify-center mb-16 reveal">
                 <div class="flex flex-wrap justify-center gap-3 font-sans-custom">
@@ -85,117 +85,117 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-500" id="projectsGrid">
 
                 <!-- Project 1 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="design">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="design">
                     <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80"
                         alt="Vespera App UI Design" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="development" style="transition-delay: 50ms;">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="development" style="transition-delay: 50ms;">
                     <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=600&q=80"
                         alt="Cosmos E-Commerce Shop Platform" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="branding" style="transition-delay: 100ms;">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="branding" style="transition-delay: 100ms;">
                     <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=600&q=80"
                         alt="Aura Identity Brand Kit" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="development" style="transition-delay: 150ms;">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="development" style="transition-delay: 150ms;">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
                         alt="Vertex Admin Dashboard Panel" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 5 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="design" style="transition-delay: 200ms;">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="design" style="transition-delay: 200ms;">
                     <img src="https://images.unsplash.com/photo-1581291518655-9523c932ded7?auto=format&fit=crop&w=600&q=80"
                         alt="Lumina Interface Design Layout" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 6 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="branding" style="transition-delay: 250ms;">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="branding" style="transition-delay: 250ms;">
                     <img src="https://images.unsplash.com/photo-1618005198143-d8664b0d00f6?auto=format&fit=crop&w=600&q=80"
                         alt="Nova Brand System Visual" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 7 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="development" style="transition-delay: 300ms;">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="development" style="transition-delay: 300ms;">
                     <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80"
                         alt="Nebula Cloud Dashboard Platform" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 8 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="branding" style="transition-delay: 350ms;">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="branding" style="transition-delay: 350ms;">
                     <img src="https://images.unsplash.com/photo-1547891654-e66ed7edd96c?auto=format&fit=crop&w=600&q=80"
                         alt="Stellar Corporate Branding Kit" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 9 -->
-                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5" data-category="design" style="transition-delay: 400ms;">
+                <div class="portfolio-item project-card group reveal relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 cursor-pointer" data-category="design" style="transition-delay: 400ms;">
                     <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=600&q=80"
                         alt="Echo Prototyping Platform Design" class="w-full h-full object-cover project-image">
                     <div class="project-overlay absolute inset-0 flex flex-col justify-end p-8">
                         <span class="text-white text-xs font-bold uppercase tracking-widest mb-2 font-sans-custom">Category | Industry</span>
                         <h3 class="text-white text-2xl font-bold font-sans-custom mb-4"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Vespera App UI</a></h3>
-                        <a href="contact.html" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-white border border-transparent transition-all duration-300">
                             <i class="fas fa-arrow-right -rotate-45"></i>
                         </a>
                     </div>
@@ -204,6 +204,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Call To Action Connect Section -->
     <section class="bg-[#08080a] py-32 border-t border-gray-900 relative overflow-hidden" id="cta">

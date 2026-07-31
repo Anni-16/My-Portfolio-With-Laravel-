@@ -488,12 +488,35 @@ window.openContactModal = function () {
     }
 };
 
+window.openProjectModal = function (imageSrc, title, category) {
+    const modal = document.getElementById("projectModal");
+    const content = document.getElementById("projectModalContent");
+    const imgEl = document.getElementById("projectModalImage");
+    const titleEl = document.getElementById("projectModalTitle");
+    const categoryEl = document.getElementById("projectModalCategory");
+
+    if (!modal || !content) return;
+
+    if (imgEl) imgEl.src = imageSrc;
+    if (titleEl) titleEl.innerText = title || "Project Preview";
+    if (categoryEl) categoryEl.innerText = category || "Portfolio";
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    setTimeout(() => {
+        content.classList.remove("scale-95", "opacity-0");
+        content.classList.add("scale-100", "opacity-100");
+    }, 10);
+    document.body.style.overflow = "hidden";
+};
+
 window.closeModals = function () {
     const modals = [
         "serviceModal",
         "reviewModal",
         "addReviewModal",
         "contactModal",
+        "projectModal",
     ];
     modals.forEach((id) => {
         const modal = document.getElementById(id);
@@ -511,6 +534,40 @@ window.closeModals = function () {
         }
     });
 };
+
+// Global listener to open project modal when clicking any project card
+document.addEventListener("click", (e) => {
+    const card = e.target.closest(".project-card");
+    if (card) {
+        const link = e.target.closest("a");
+        // If user clicks a link with a real page destination (like contact.html), allow navigation.
+        // Otherwise, or if clicking card body/image/button, open modal!
+        if (
+            link &&
+            link.getAttribute("href") &&
+            link.getAttribute("href") !== "#" &&
+            !link.getAttribute("href").startsWith("javascript:")
+        ) {
+            return;
+        }
+        e.preventDefault();
+        const img = card.querySelector("img");
+        const title = card.querySelector("h3");
+        const category = card.querySelector("span");
+
+        if (img) {
+            let highResSrc = img.src
+                .replace("w=600&q=80", "w=1600&q=90")
+                .replace("w=600", "w=1600");
+            const titleText = title
+                ? title.innerText
+                : img.alt || "Project Preview";
+            const categoryText = category ? category.innerText : "Portfolio";
+
+            openProjectModal(highResSrc, titleText, categoryText);
+        }
+    }
+});
 
 // Modal Contact Form Submit Listener
 const modalContactForm = document.getElementById("modalContactForm");

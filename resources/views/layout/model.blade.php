@@ -154,3 +154,27 @@
             </div>
         </div>
     </div>
+
+    <!-- Project Image Prebiew Modal -->
+    <div id="projectModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-3 sm:p-6 md:p-8">
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-xl" onclick="closeModals()"></div>
+        <div class="bg-[#09090b] border border-white/10 rounded-3xl w-full max-w-6xl h-[92vh] max-h-[95vh] relative z-10 transform scale-95 opacity-0 transition-all duration-300 flex flex-col overflow-hidden shadow-2xl"
+            id="projectModalContent">
+
+            <!-- Header bar with Title & Close button -->
+            <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-black/50 backdrop-blur-md">
+                <div class="flex items-center gap-3">
+                    <span id="projectModalCategory" class="px-3 py-1 rounded-full bg-[#00e5ff]/10 text-[#00e5ff] text-xs font-bold uppercase tracking-wider font-sans-custom border border-[#00e5ff]/20">Design</span>
+                    <h3 id="projectModalTitle" class="text-white text-lg sm:text-2xl font-bold font-sans-custom">Project Title</h3>
+                </div>
+                <button onclick="closeModals()" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white text-gray-300 hover:text-black flex items-center justify-center transition-all duration-300 border border-white/10 cursor-pointer">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Full-size Image Canvas -->
+            <div class="relative w-full flex-1 min-h-0 bg-black flex items-center justify-center p-2 overflow-hidden">
+                <img id="projectModalImage" src="" alt="Project Preview" class="w-full h-full object-contain rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </div>

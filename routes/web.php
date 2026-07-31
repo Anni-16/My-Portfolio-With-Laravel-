@@ -22,6 +22,10 @@ Route::get('/blogs', function () {
     return view('blogs');
 })->name('blogs');
 
+Route::get('/blogs-details', function () {
+    return view('blogs-details');
+})->name('blogs-details');
+
 Route::get('/contact-us', function () {
     return view('contact');
 })->name('contact-us');

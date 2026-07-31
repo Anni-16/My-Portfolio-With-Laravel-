@@ -102,7 +102,7 @@
                                 Discover the principles of high-contrast editorial typography paired with low-glow neutral color grids for premium interface aesthetics.
                             </p>
                         </div>
-                        <a href="contact.html" class="inline-flex items-center gap-2 text-white font-bold text-sm hover:text-[#00e5ff] transition-colors font-sans-custom mt-auto">
+                        <a href="{{ route('blogs-details') }}" class="inline-flex items-center gap-2 text-white font-bold text-sm hover:text-[#00e5ff] transition-colors font-sans-custom mt-auto">
                             Read Article <i class="fas fa-arrow-right text-xs"></i>
                         </a>
                     </div>

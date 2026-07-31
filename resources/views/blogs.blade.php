@@ -93,7 +93,7 @@
                         <div>
                             <div class="flex items-center justify-between text-xs text-gray-500 font-semibold font-sans-custom mb-3">
                                 <span>UI/UX DESIGN | Admin</span>
-                                <span>5 MIN READ 1</span>
+                                <span>5 MIN READ</span>
                             </div>
                             <h4 class="text-white text-xl font-bold mb-4 group-hover:text-[#00e5ff] transition-colors font-sans-custom">
                                 Modernizing Dark Mode Aesthetics in 2026

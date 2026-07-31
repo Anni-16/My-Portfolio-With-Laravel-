@@ -25,11 +25,11 @@
     <!-- Header Section End -->
 
     <!-- About Hero Section -->
-    <section class="relative min-h-[60vh] flex items-center pt-24 overflow-hidden">
+    <section class="relative min-h-[40vh] flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 radial-glow-violet opacity-40"></div>
         <div class="absolute top-20 right-10 w-96 h-96 radial-glow-coral opacity-20"></div>
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-2 sm:py-8">
             <div class="reveal">
                 <!-- Rotating Star Badge -->
                 <div class="flex items-center gap-3 sm:gap-4 mb-6">
@@ -60,7 +60,7 @@
     </section>
 
     <!-- Detailed Biography Section -->
-    <section class="py-24 relative overflow-hidden" id="biography">
+    <section class="pt-4 pb-12 sm:py-24 relative overflow-hidden" id="biography">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-12 gap-16 items-start">
 
@@ -102,7 +102,7 @@
     </section>
 
     <!-- Core Values Section -->
-    <section class="bg-[#08080a] py-32 border-y border-gray-900 relative">
+    <section class="bg-[#08080a] py-16 sm:py-32 border-y border-gray-900 relative">
         <div class="absolute left-[-200px] top-1/4 w-[400px] h-[400px] radial-glow-violet opacity-10"></div>
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-20 reveal">
@@ -162,7 +162,7 @@
     </section>
 
     <!-- Experience & Education Resume Timeline -->
-    <section class="py-32 relative overflow-hidden" id="experience">
+    <section class="py-16 sm:py-32 relative overflow-hidden" id="experience">
         <div class="absolute right-[-200px] bottom-1/4 w-[400px] h-[400px] radial-glow-coral opacity-10"></div>
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-12 gap-16 items-start">
@@ -224,7 +224,7 @@
     </section>
 
     <!-- Skills Counter Progress Section -->
-    <section class="bg-[#08080a] py-32 border-t border-gray-900 relative overflow-hidden" id="skills">
+    <section class="bg-[#08080a] py-16 sm:py-32 border-t border-gray-900 relative overflow-hidden" id="skills">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-8 reveal">
                 <span class="text-white font-bold uppercase tracking-widest text-xs font-sans-custom">CAPABILITIES</span>

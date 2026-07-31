@@ -25,11 +25,11 @@
 
 
     <!-- Projects Hero Section -->
-    <section class="relative min-h-[60vh] flex items-center pt-24 overflow-hidden">
+    <section class="relative sm:py-6 min-h-[40vh] flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 radial-glow-violet opacity-40"></div>
         <div class="absolute top-20 right-10 w-96 h-96 radial-glow-coral opacity-20"></div>
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-3 sm:py-8">
             <div class="reveal">
                 <!-- Rotating Star Badge -->
                 <div class="flex items-center gap-3 sm:gap-4 mb-6">
@@ -60,7 +60,7 @@
     </section>
 
     <!-- Projects Grid Section -->
-     <section class="mb-20 relative overflow-hidden" id="works">
+     <section class="mb-10 sm:mb-20 relative overflow-hidden" id="works">
         <div class="max-w-7xl mx-auto px-6">
             
             <!-- Filters Controls -->
@@ -207,7 +207,7 @@
 
 
     <!-- Call To Action Connect Section -->
-    <section class="bg-[#08080a] py-32 border-t border-gray-900 relative overflow-hidden" id="cta">
+    <section class="bg-[#08080a] py-16 sm:py-32 border-t border-gray-900 relative overflow-hidden" id="cta">
         <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] radial-glow-violet opacity-5 pointer-events-none"></div>
         <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
             <div class="reveal">

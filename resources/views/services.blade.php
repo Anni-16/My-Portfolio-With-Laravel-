@@ -35,11 +35,11 @@
 
 
     <!-- Services Hero Section -->
-    <section class="relative min-h-[60vh] flex items-center pt-24 overflow-hidden">
+    <section class="relative sm:py-6 min-h-[40vh] flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 radial-glow-violet opacity-40"></div>
         <div class="absolute top-20 right-10 w-96 h-96 radial-glow-coral opacity-20"></div>
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-3 sm:py-8">
             <div class="reveal">
                 <!-- Rotating Star Badge -->
                 <div class="flex items-center gap-3 sm:gap-4 mb-6">
@@ -70,8 +70,8 @@
     </section>
 
     <!-- Detailed Services Grid -->
-    <section class="py-24 relative overflow-hidden" id="services">
-        <div class="max-w-7xl mx-auto px-6">
+    <section class="py-12 sm:py-10 relative overflow-hidden" id="services">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-8">
 
                 <!-- Service Card 1 -->
@@ -155,7 +155,7 @@
     </section>
 
     <!-- Packages / Pricing Grid Section -->
-    <section class="bg-[#08080a] py-32 border-y border-gray-900 relative overflow-hidden" id="packages">
+    <section class="bg-[#08080a] py-16 sm:py-32 border-y border-gray-900 relative overflow-hidden" id="packages">
         <div class="absolute left-[-200px] bottom-1/4 w-[400px] h-[400px] radial-glow-violet opacity-10"></div>
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-20 reveal">
@@ -253,7 +253,7 @@
     </section>
 
     <!-- FAQ Accordion Section -->
-    <section class="py-32 relative overflow-hidden" id="faq">
+    <section class="py-16 sm:py-32 relative overflow-hidden" id="faq">
         <div class="absolute right-[-150px] top-1/4 w-[350px] h-[350px] radial-glow-coral opacity-10"></div>
         <div class="max-w-4xl mx-auto px-6">
 

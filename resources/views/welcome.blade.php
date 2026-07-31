@@ -30,7 +30,7 @@
         <div class="absolute inset-0 radial-glow-violet opacity-40"></div>
         <div class="absolute top-20 right-10 w-96 h-96 radial-glow-coral opacity-30"></div>
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-2 sm:py-16">
             <div class="grid lg:grid-cols-2 items-center gap-12">
 
                 <!-- Left Content Block -->
@@ -130,7 +130,7 @@
     </section>
 
     <!-- Skills Counter Progress Section -->
-    <section class="bg-[#08080a] py-28 relative border-y border-gray-900 overflow-hidden">
+    <section class="bg-[#08080a] py-14 sm:py-28 relative border-y border-gray-900 overflow-hidden">
         <!-- Glow background effect -->
         <div
             class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] radial-glow-violet opacity-5 pointer-events-none">
@@ -241,7 +241,7 @@
     </section>
 
     <!-- About Me & Interactive Stats Section -->
-    <section id="about" class="py-32 relative overflow-hidden">
+    <section id="about" class="py-16 sm:py-32 relative overflow-hidden">
         <div class="absolute left-[-200px] top-1/4 w-[400px] h-[400px] radial-glow-violet opacity-20"></div>
 
         <div class="max-w-7xl mx-auto px-6">
@@ -326,7 +326,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="bg-[#08080a] py-32 border-y border-gray-900 relative">
+    <section id="services" class="bg-[#08080a] py-16 sm:py-32 border-y border-gray-900 relative">
         <div class="absolute right-[-150px] bottom-1/4 w-[350px] h-[350px] radial-glow-coral opacity-10"></div>
 
         <div class="max-w-7xl mx-auto px-6">
@@ -401,7 +401,7 @@
     </section>
 
     <!-- Portfolio Projects Grid Section -->
-    <section id="projects" class="py-32 relative">
+    <section id="projects" class="py-16 sm:py-32 relative">
         <div class="max-w-7xl mx-auto px-6">
 
             <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 reveal gap-8">
@@ -540,7 +540,7 @@
     </section>
 
     <!-- Resume Career Timeline Section -->
-    <section id="experience" class="bg-[#08080a] py-32 border-y border-gray-900 relative">
+    <section id="experience" class="bg-[#08080a] py-16 sm:py-32 border-y border-gray-900 relative">
         <div class="absolute left-[-200px] top-1/4 w-[400px] h-[400px] radial-glow-violet opacity-10"></div>
 
         <div class="max-w-7xl mx-auto px-6">
@@ -608,7 +608,7 @@
     </section>
 
     <!-- Testimonials Slider Section -->
-    <section class="py-32 relative overflow-hidden">
+    <section class="py-16 sm:py-32 relative overflow-hidden">
         <div class="absolute right-[-150px] top-1/4 w-[350px] h-[350px] radial-glow-coral opacity-10"></div>
 
         <div class="max-w-7xl mx-auto px-6">
@@ -721,7 +721,7 @@
     </section>
 
     <!-- Latest Blog Feed Section -->
-    <section id="blog" class="bg-[#08080a] py-32 border-y border-gray-900 relative">
+    <section id="blog" class="bg-[#08080a] py-16 sm:py-32 border-y border-gray-900 relative">
         <div class="max-w-7xl mx-auto px-6">
 
             <div class="text-center mb-20 reveal">
@@ -809,7 +809,7 @@
     </section>
 
     <!-- Contact & Connect Form Section -->
-    <section id="contact" class="py-32 relative overflow-hidden">
+    <section id="contact" class="py-16 sm:py-32 relative overflow-hidden">
         <div class="absolute left-[-200px] bottom-[-200px] w-[500px] h-[500px] radial-glow-violet opacity-20"></div>
         <div class="absolute right-[-200px] top-1/4 w-[400px] h-[400px] radial-glow-coral opacity-15"></div>
 
@@ -914,7 +914,6 @@
                                 <option value="general">General Collaboration / Saying Hi</option>
                             </select>
                         </div>
-                        
                         <!-- Message Input -->
                         <div class="flex flex-col">
                             <label for="message"

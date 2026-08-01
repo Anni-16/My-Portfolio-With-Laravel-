@@ -178,3 +178,65 @@
             </div>
         </div>
     </div>
+
+    <!-- Experience Modal -->
+    <div id="experienceModal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeExperienceModal()"></div>
+
+        <div id="experienceModalContent"
+            class="bg-[#0c0c0e] border border-gray-800 rounded-3xl p-8 max-w-2xl w-full relative z-10 transform scale-95 opacity-0 transition-all duration-300">
+
+            <button onclick="closeExperienceModal()"
+                class="absolute top-6 right-6 text-gray-500 hover:text-white transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+
+            <span id="experienceModalDate"
+                class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">
+            </span>
+
+            <h3 id="experienceModalTitle"
+                class="text-white text-2xl font-bold mt-3 mb-2 font-sans-custom">
+            </h3>
+
+            <h4 id="experienceModalCompany"
+                class="text-[#00e5ff] text-lg font-semibold mb-5 font-sans-custom">
+            </h4>
+
+            <p id="experienceModalDesc"
+                class="text-gray-400 leading-8 text-base font-sans-custom">
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Education Modal -->
+    <div id="educationModal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeEducationModal()"></div>
+
+        <div id="educationModalContent"
+            class="bg-[#0c0c0e] border border-gray-800 rounded-3xl p-8 max-w-2xl w-full relative z-10 transform scale-95 opacity-0 transition-all duration-300">
+
+            <button onclick="closeEducationModal()"
+                class="absolute top-6 right-6 text-gray-500 hover:text-white transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+
+            <span id="educationModalDate"
+                class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">
+            </span>
+
+            <h3 id="educationModalTitle"
+                class="text-white text-2xl font-bold mt-3 mb-2 font-sans-custom">
+            </h3>
+
+            <h4 id="educationModalInstitute"
+                class="text-[#00e5ff] text-lg font-semibold mb-5 font-sans-custom">
+            </h4>
+
+            <p id="educationModalDesc"
+                class="text-gray-400 leading-8 text-base font-sans-custom">
+            </p>
+
+        </div>
+    </div>

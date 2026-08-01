@@ -807,3 +807,67 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Experience Modal Logic Functions
+function openExperienceModal(date, title, company, description) {
+    document.getElementById("experienceModalDate").innerText = date;
+    document.getElementById("experienceModalTitle").innerText = title;
+    document.getElementById("experienceModalCompany").innerText = company;
+    document.getElementById("experienceModalDesc").innerText = description;
+
+    const modal = document.getElementById("experienceModal");
+    const content = document.getElementById("experienceModalContent");
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    setTimeout(() => {
+        content.classList.remove("opacity-0", "scale-95");
+        content.classList.add("opacity-100", "scale-100");
+    }, 10);
+}
+
+function closeExperienceModal() {
+    const modal = document.getElementById("experienceModal");
+    const content = document.getElementById("experienceModalContent");
+
+    content.classList.remove("opacity-100", "scale-100");
+    content.classList.add("opacity-0", "scale-95");
+
+    setTimeout(() => {
+        modal.classList.remove("flex");
+        modal.classList.add("hidden");
+    }, 300);
+}
+
+// Education Modal Logic Functions
+function openEducationModal(date, title, institute, description) {
+    document.getElementById("educationModalDate").innerText = date;
+    document.getElementById("educationModalTitle").innerText = title;
+    document.getElementById("educationModalInstitute").innerText = institute;
+    document.getElementById("educationModalDesc").innerText = description;
+
+    const modal = document.getElementById("educationModal");
+    const content = document.getElementById("educationModalContent");
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    setTimeout(() => {
+        content.classList.remove("opacity-0", "scale-95");
+        content.classList.add("opacity-100", "scale-100");
+    }, 10);
+}
+
+function closeEducationModal() {
+    const modal = document.getElementById("educationModal");
+    const content = document.getElementById("educationModalContent");
+
+    content.classList.remove("opacity-100", "scale-100");
+    content.classList.add("opacity-0", "scale-95");
+
+    setTimeout(() => {
+        modal.classList.remove("flex");
+        modal.classList.add("hidden");
+    }, 300);
+}

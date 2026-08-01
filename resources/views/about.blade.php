@@ -161,8 +161,100 @@
         </div>
     </section>
 
-    <!-- Experience & Education Resume Timeline -->
+    <!-- Experience Resume Timeline -->
     <section class="py-16 sm:py-32 relative overflow-hidden" id="experience">
+        <div class="absolute right-[-200px] bottom-1/4 w-[400px] h-[400px] radial-glow-coral opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-16 items-start">
+
+                <!-- Left Details Header (5 cols) -->
+                <div class="lg:col-span-7">
+                    <div class="relative border-l border-white/10 ml-4 pl-8 space-y-12">
+
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item relative reveal">
+                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">&nbsp; &nbsp; 2024 — Present | Delhi, India</span>
+                            <h4 class="text-white text-xl font-bold mt-1 mb-1 font-sans-custom">Lead Frontend Engineer</h4>
+                            <h5 class="text-sm text-[#00e5ff] font-semibold mb-3 font-sans-custom">Vertex Interactive Studio</h5>
+                            <p class="text-gray-500 text-sm leading-relaxed max-w-xl font-sans-custom">
+                                Leading development of responsive client-facing e-commerce applications, constructing internal Tailwind theme utilities, and optimizing static page loads to achieve exceptional Lighthouse ratings.
+                            </p>
+                            <a href="javascript:void(0)"
+                                onclick="openExperienceModal(
+                                    '2024 — Present | Delhi, India',
+                                    'Lead Frontend Engineer',
+                                    'Vertex Interactive Studio',
+                                    'Leading development of responsive client-facing e-commerce applications, constructing internal Tailwind theme utilities, and optimizing static page loads to achieve exceptional Lighthouse ratings.'
+                                    )"
+                                class="text-[#00e5ff] hover:text-[#00b8e0] text-sm font-semibold underline">
+                                See More
+                            </a>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item relative reveal">
+                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">&nbsp; &nbsp; 2024 — Present | Delhi, India</span>
+                            <h4 class="text-white text-xl font-bold mt-1 mb-1 font-sans-custom">UI/UX Web Developer</h4>
+                            <h5 class="text-sm text-[#00e5ff] font-semibold mb-3 font-sans-custom">Nova Brand Solutions</h5>
+                            <p class="text-gray-500 text-sm leading-relaxed max-w-xl font-sans-custom">
+                                Designed and coded digital brand platforms, wireframed customized user interfaces, and configured responsive front-end animation structures using vanilla CSS.
+                            </p>
+                            <a href="javascript:void(0)"
+                                onclick="openExperienceModal(
+                                    '2024 — Present | Delhi, India',
+                                    'UI/UX Web Developer',
+                                    'Nova Brand Solutions',
+                                    'Designed and coded digital brand platforms, wireframed customized user interfaces, and configured responsive front-end animation structures using vanilla CSS.'
+                                    )"
+                                class="text-[#00e5ff] hover:text-[#00b8e0] text-sm font-semibold underline">
+                                See More
+                            </a>
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-item relative reveal">
+                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">&nbsp; &nbsp; 2024 — Present | Delhi, India</span>
+                            <h4 class="text-white text-xl font-bold mt-1 mb-1 font-sans-custom">B.S. in Computer Science</h4>
+                            <h5 class="text-sm text-[#00e5ff] font-semibold mb-3 font-sans-custom">Syracuse University School of Engineering</h5>
+                            <p class="text-gray-500 text-sm leading-relaxed max-w-xl font-sans-custom">
+                                Specialized in software development architecture, algorithm optimizations, human-computer interaction theories, and responsive digital interface design.
+                            </p>
+                            <a href="javascript:void(0)"
+                                onclick="openExperienceModal(
+                                    '2024 — Present | Delhi, India',
+                                    'B.S. in Computer Science',
+                                    'Syracuse University School of Engineering',
+                                    'Specialized in software development architecture, algorithm optimizations, human-computer interaction theories, and responsive digital interface design.'
+                                    )"
+                                class="text-[#00e5ff] hover:text-[#00b8e0] text-sm font-semibold underline">
+                                See More
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Timeline (7 cols) -->
+                <div class="lg:col-span-5 reveal-left">
+                    <span class="text-white font-bold uppercase tracking-widest text-xs font-sans-custom">CAREER STORY</span>
+                    <h2 class="text-white text-4xl md:text-5xl font-black tracking-tight mt-3 mb-6 font-sans-custom">
+                        Experience
+                    </h2>
+                    <p class="text-gray-500 text-base leading-relaxed mb-8 font-sans-custom">
+                        A chronological log of my academic foundations and professional roles. I've worked across remote teams, leading agencies, and fast-paced product environments.
+                    </p>
+                    <a href="javascript:void(0)" onclick="openContactModal()" class="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-white/20 text-white text-sm font-bold tracking-wider hover:bg-white hover:text-black hover:border-white hover:scale-105 hover:shadow-lg hover:shadow-white/10 transition-all duration-300 font-sans-custom group">
+                        Let's Work Together
+                        <i class="fas fa-arrow-right -rotate-45 group-hover:rotate-0 transition-transform duration-300"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  Education Resume Timeline -->
+    <section class="py-16 sm:py-32 relative overflow-hidden" id="education">
         <div class="absolute right-[-200px] bottom-1/4 w-[400px] h-[400px] radial-glow-coral opacity-10"></div>
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-12 gap-16 items-start">
@@ -171,7 +263,7 @@
                 <div class="lg:col-span-5 reveal-left">
                     <span class="text-white font-bold uppercase tracking-widest text-xs font-sans-custom">CAREER STORY</span>
                     <h2 class="text-white text-4xl md:text-5xl font-black tracking-tight mt-3 mb-6 font-sans-custom">
-                        Experience & Education
+                        Education
                     </h2>
                     <p class="text-gray-500 text-base leading-relaxed mb-8 font-sans-custom">
                         A chronological log of my academic foundations and professional roles. I've worked across remote teams, leading agencies, and fast-paced product environments.
@@ -188,32 +280,62 @@
 
                         <!-- Timeline Item 1 -->
                         <div class="timeline-item relative reveal">
-                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">2024 — Present</span>
+                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">&nbsp; &nbsp; 2024 — Present | Delhi, India </span>
                             <h4 class="text-white text-xl font-bold mt-1 mb-1 font-sans-custom">Lead Frontend Engineer</h4>
                             <h5 class="text-sm text-[#00e5ff] font-semibold mb-3 font-sans-custom">Vertex Interactive Studio</h5>
                             <p class="text-gray-500 text-sm leading-relaxed max-w-xl font-sans-custom">
                                 Leading development of responsive client-facing e-commerce applications, constructing internal Tailwind theme utilities, and optimizing static page loads to achieve exceptional Lighthouse ratings.
                             </p>
+                            <a href="javascript:void(0)"
+                                onclick="openEducationModal(
+                                    '2024 — Present | Delhi, India',
+                                    'B.S. in Computer Science',
+                                    'Syracuse University School of Engineering',
+                                    'Focused on software engineering, algorithms, data structures, operating systems, databases, networking, and responsive web development. Completed multiple academic projects emphasizing real-world software solutions and modern development practices.'
+                                    )"
+                                class="text-[#00e5ff] hover:text-[#00b8e0] text-sm font-semibold underline">
+                                See More
+                            </a>
                         </div>
 
                         <!-- Timeline Item 2 -->
                         <div class="timeline-item relative reveal">
-                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">2021 — 2024</span>
+                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">&nbsp; &nbsp; 2024 — Present | Delhi, India</span>
                             <h4 class="text-white text-xl font-bold mt-1 mb-1 font-sans-custom">UI/UX Web Developer</h4>
                             <h5 class="text-sm text-[#00e5ff] font-semibold mb-3 font-sans-custom">Nova Brand Solutions</h5>
                             <p class="text-gray-500 text-sm leading-relaxed max-w-xl font-sans-custom">
                                 Designed and coded digital brand platforms, wireframed customized user interfaces, and configured responsive front-end animation structures using vanilla CSS.
                             </p>
+                            <a href="javascript:void(0)"
+                                onclick="openEducationModal(
+                                    '2021 — 2024 | Delhi, India',
+                                    'Higher Secondary Education',
+                                    'ABC Senior Secondary School',
+                                    'Studied Physics, Chemistry, Mathematics, and Computer Science. Built a strong foundation in logical thinking, programming fundamentals, and analytical problem-solving while actively participating in technical events.'
+                                    )"
+                                class="text-[#00e5ff] hover:text-[#00b8e0] text-sm font-semibold underline">
+                                See More
+                            </a>
                         </div>
 
                         <!-- Timeline Item 3 -->
                         <div class="timeline-item relative reveal">
-                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">2018 — 2021</span>
+                            <span class="text-xs text-gray-500 font-semibold tracking-wider uppercase font-sans-custom">&nbsp; &nbsp; 2024 — Present | Delhi, India</span>
                             <h4 class="text-white text-xl font-bold mt-1 mb-1 font-sans-custom">B.S. in Computer Science</h4>
                             <h5 class="text-sm text-[#00e5ff] font-semibold mb-3 font-sans-custom">Syracuse University School of Engineering</h5>
                             <p class="text-gray-500 text-sm leading-relaxed max-w-xl font-sans-custom">
                                 Specialized in software development architecture, algorithm optimizations, human-computer interaction theories, and responsive digital interface design.
                             </p>
+                            <a href="javascript:void(0)"
+                                onclick="openEducationModal(
+                                    '2019 — 2021 | Delhi, India',
+                                    'Secondary Education',
+                                    'XYZ Public School',
+                                    'Completed secondary education with distinction. Developed interest in technology, programming, and web design through school projects and extracurricular activities.'
+                                    )"
+                                class="text-[#00e5ff] hover:text-[#00b8e0] text-sm font-semibold underline">
+                                See More
+                            </a>
                         </div>
 
                     </div>
